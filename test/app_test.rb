@@ -1,6 +1,6 @@
 require_relative "test_helper"
 
-class ServerTest < Minitest::Test
+class AppTest < Minitest::Test
   include Rack::Test::Methods
 
   def setup
@@ -10,7 +10,7 @@ class ServerTest < Minitest::Test
   end
 
   def app
-    Server
+    App
   end
 
   def test_has_a_root_route

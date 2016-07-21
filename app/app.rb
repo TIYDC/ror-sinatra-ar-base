@@ -1,6 +1,6 @@
 require "./config/dependencies"
 
-class Server < Sinatra::Base
+class App < Sinatra::Base
   # YOU NEED DIS
   set :public_folder, File.dirname(__FILE__) + '/assets'
   # AND DIS
