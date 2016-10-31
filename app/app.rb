@@ -9,7 +9,8 @@ class App < Sinatra::Base
     BetterErrors.application_root = File.expand_path(__dir__, "..")
   end
 
-  # Expose any file stored in the folder to the internet
+  # Expose any file stored in the folder to the Internet this will host the
+  # front end students code
   # http://localhost:4567/css/example.css
   set :public_folder, File.dirname(__FILE__) + '/assets'
 
